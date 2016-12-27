@@ -1,0 +1,51 @@
+/*  base 公共基础 */
+html, body{ 
+    margin:0; height:100%; 
+    font-family: Tahoma,"Helvetica Neue","Hiragino Sans GB","Microsoft Yahei",sans-serif;
+
+}
+iframe{
+    width:100%;
+    height: 100%;
+    border: none;
+    color: white;
+}
+/* global */
+@navH:80px;/* 导航高度 */
+@menuW:200px;/* 菜单宽度 */
+
+.lg-s-wrapper{
+    background-color: @backcolor;
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden; 
+
+    .lg-s-head{
+        width:100%;
+        height: @navH;
+        background-color: @basecolor;
+    }
+    .lg-s-content{
+        background-color: @backcolor;
+        position: absolute;
+        top: @navH;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        .lg-s-content-l{
+            background-color: @backcolor_l;
+            width: @menuW;
+            height: 100%;
+            position: absolute;
+        }
+        .lg-s-content-r{
+            background-color: @backcolor; 
+            margin-left: @menuW; 
+            height: 100%;
+        }
+        .lg-s-body{
+            background-color: white;
+        } 
+    }
+    
+}

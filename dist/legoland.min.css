@@ -1,0 +1,166 @@
+/* 基础模块 */
+/* ------- color -------*/
+/*color:[titlecolor:标题(黑),subcolor:副标题/内容(深灰),tipcolor:次级文本(浅灰),bordercolor:边框]*/
+/*color:[backcolor:页面背景,backcolor_l:浅色背景,basecolor:页头(紫色),linkcolor:按钮链接(蓝色),hovercolor:划过颜色(深蓝)]*/
+/*color:[maincolor:高亮(橙色),dangercolor:警示色,successcolor:健康(绿色)]*/
+/* ------- gap -------*/
+/* 结构模块 */
+/*  base 公共基础 */
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Tahoma, "Helvetica Neue", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: white;
+}
+/* global */
+/* 导航高度 */
+/* 菜单宽度 */
+.lg-s-wrapper {
+  background-color: #ededed;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.lg-s-wrapper .lg-s-head {
+  width: 100%;
+  height: 80px;
+  background-color: #464e78;
+}
+.lg-s-wrapper .lg-s-content {
+  background-color: #ededed;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.lg-s-wrapper .lg-s-content .lg-s-content-l {
+  background-color: #f8f8f8;
+  width: 200px;
+  height: 100%;
+  position: absolute;
+}
+.lg-s-wrapper .lg-s-content .lg-s-content-r {
+  background-color: #ededed;
+  margin-left: 200px;
+  height: 100%;
+}
+.lg-s-wrapper .lg-s-content .lg-s-body {
+  background-color: white;
+}
+/* grid 栅格 */
+.lg-grid-container {
+  padding: 15px;
+}
+.lg-grid-row {
+  overflow: auto;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.lg-grid-row:before,
+.lg-grid-row:after {
+  content: ' ';
+  display: table;
+}
+.lg-grid-1,
+.lg-grid-2,
+.lg-grid-3,
+.lg-grid-4,
+.lg-grid-5,
+.lg-grid-6,
+.lg-grid-7,
+.lg-grid-8,
+.lg-grid-9,
+.lg-grid-10,
+.lg-grid-11,
+.lg-grid-12 {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 15px;
+}
+.lg-grid-1 {
+  width: 8.333333%;
+}
+.lg-grid-2 {
+  width: 16.666666%;
+}
+.lg-grid-3 {
+  width: 25%;
+}
+.lg-grid-4 {
+  width: 33.333333%;
+}
+.lg-grid-5 {
+  width: 41.666666%;
+}
+.lg-grid-6 {
+  width: 50%;
+}
+.lg-grid-7 {
+  width: 58.333333%;
+}
+.lg-grid-8 {
+  width: 66.666666%;
+}
+.lg-grid-9 {
+  width: 75%;
+}
+.lg-grid-10 {
+  width: 83.333333%;
+}
+.lg-grid-11 {
+  width: 91.666666%;
+}
+.lg-grid-12 {
+  width: 100%;
+}
+/* 栅格 */
+/* 功能组件模块 */
+.m-nav {
+  height: 100%;
+}
+.m-nav .m-nav-head {
+  width: 200px;
+  height: 100%;
+  background-image: url('img/logo.png');
+  background-position: center 15px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.m-nav .m-nav-ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+}
+.m-nav .m-nav-ul li {
+  line-height: 100px;
+  float: left;
+  padding: 0 20px;
+  color: white;
+  font-size: 18px;
+}
+.m-nav .m-nav-ul li a {
+  color: white;
+}
+.m-nav .m-nav-ul li.active a {
+  border-bottom: 3px solid orange;
+}
+/* 元件 */
+.u-btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.u-btn.main {
+  background-color: ;
+}

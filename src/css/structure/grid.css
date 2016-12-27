@@ -1,0 +1,59 @@
+/* grid 栅格 */
+.lg-grid-container{
+    padding:(@gap / 2);
+}
+
+.lg-grid-row{
+    overflow: auto;
+    margin-left: -(@gap / 2);
+    margin-right: -(@gap / 2);
+    &:before,&:after{
+        content:' ';
+        display: table;
+    } 
+}
+
+.lg-grid-1,.lg-grid-2,.lg-grid-3,.lg-grid-4,.lg-grid-5,.lg-grid-6,
+.lg-grid-7,.lg-grid-8,.lg-grid-9,.lg-grid-10,.lg-grid-11,.lg-grid-12
+{
+    position: relative;
+    box-sizing:border-box;
+    float: left;
+    padding:0 (@gap / 2);
+}
+.lg-grid-1{
+    width: 8.333333%;
+}
+.lg-grid-2{
+    width: 16.666666%;
+}
+.lg-grid-3{
+    width: 25%;
+}
+.lg-grid-4{
+    width: 33.333333%;
+}
+.lg-grid-5{
+    width: 41.666666%;
+}
+.lg-grid-6{
+    width: 50%;
+}
+.lg-grid-7{
+    width: 58.333333%;
+}
+.lg-grid-8{
+    width: 66.666666%;
+}
+.lg-grid-9{
+    width: 75%;
+}
+.lg-grid-10{
+    width: 83.333333%;
+}
+.lg-grid-11{
+    width: 91.666666%;
+}
+.lg-grid-12{
+    width: 100%;
+}
