@@ -1,0 +1,37 @@
+input,select{
+    outline: none;
+    box-sizing:border-box;
+    width: 150px;
+    margin-right:5px; 
+    line-height: 22px;
+}
+input[type='radio']{
+    width: 20px;
+}
+
+input[type='text']{
+    border:1px solid @bordercolor;
+    padding:3px 5px;
+    font-size: 14px;
+    color: @subcolor;
+    &:active,&:focus{
+        border:1px solid @linkcolor;
+        /*padding:3px 5px;*/
+    }
+}
+select{
+    border:1px solid @bordercolor;
+    appearance:none;
+    padding: 5px;
+    font-size: 14px;
+    color: @subcolor;
+    &:active,&:focus{
+        border:1px solid @linkcolor; 
+    }
+    option:hover{
+        background-color: @linkcolor;
+    }
+    option[selected]{
+        background-color: @linkcolor;
+    }
+}

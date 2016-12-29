@@ -1,0 +1,22 @@
+/*  base 公共基础 */
+html, body{ 
+    margin:0; height:100%; 
+    font-family: @family;
+    overflow-x: hidden;
+}
+iframe{
+    width:100%;
+    height: 100%;
+    border: none;
+    color: white;
+}
+a{
+    box-sizing:border-box;
+    text-decoration: none;
+    color: @linkcolor;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}

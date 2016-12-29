@@ -71,9 +71,24 @@ module.exports = function(grunt) {
             build: {
                 files: [{
                     expand: true,
-                    cwd: 'src',
-                    src: '**',
+                    cwd: 'src/css/icon',
+                    src: 'iconfont.*',
                     dest: 'dist'
+                },{
+                    expand: true,
+                    cwd: 'src/img',
+                    src: '*.*',
+                    dest: 'dist/img'
+                },{
+                    expand: true,
+                    cwd: 'src/js',
+                    src: '*.*',
+                    dest: 'dist/js'
+                },{
+                    expand: true,
+                    cwd: 'demo',
+                    src: '*.*',
+                    dest: 'dist/demo'
                 }]
             }
         },
@@ -138,13 +153,23 @@ module.exports = function(grunt) {
                     "dist/legoland.min.css": "src/legoland.css"
                 }
             }
+        },
+        watch:{
+            start:{
+                files: ['src/css/*/*.css','src/js/*.js','demo/*.*'],
+                tasks: ['less','copy']
+            }
         }
     });
 
-    // grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.event.on('watch', function(action, filepath, target) {
+          grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
+    });
+    grunt.loadNpmTasks('grunt-contrib-copy');
     // grunt.loadNpmTasks('grunt-contrib-concat');
     // grunt.loadNpmTasks('grunt-contrib-uglify');
     // grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.registerTask('default', ['less']);
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.registerTask('default', ['less','copy','watch']);
 };

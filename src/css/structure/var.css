@@ -15,6 +15,13 @@
 @dangercolor:#do5538;
 @successcolor:#do5538;
 
+/* ------- font -------*/
+@family:Tahoma,"Helvetica Neue","Hiragino Sans GB","Microsoft Yahei",sans-serif; 
 
 /* ------- gap -------*/
 @gap:30px;
+
+/* ------- structure -------*/
+@navH:80px;/* 导航高度 */
+@menuW:200px;/* 菜单宽度 */
+@navTcolor:white;

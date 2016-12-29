@@ -1,0 +1,22 @@
+.lg-u-table{
+    width: 100%;
+    border-collapse:collapse; 
+    line-height: 36px;
+    text-align: center;
+    thead{
+        background-color:#eee; 
+        color: @basecolor;
+        th{
+            font-weight: normal;
+        }
+        
+    }
+    tr:nth-child(2n){
+        background-color: @backcolor_l;
+    }
+}
+.lg-u-table-hd{
+    &:extend(.lg-u-table);  
+    background-color: @basecolor;
+    color: white;
+}

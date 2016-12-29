@@ -1,0 +1,40 @@
+p{
+    margin:0; 
+}
+label,span{
+    color: @subcolor;
+    font-size: 14px;
+}
+
+.lg-u-title{ 
+    font-size: 18px;
+    line-height: 40px; 
+    color: @basecolor;
+    display: inline;
+    margin-right: @gap;
+}
+.lg-u-title-m{
+    &:extend(.lg-u-title); 
+    text-align: center;
+    display: block; 
+}
+.lg-u-title-r{
+    &:extend(.lg-u-title); 
+    text-align: right; 
+}
+.lg-u-text{ 
+    font-size: 16px;
+    line-height: 22px;
+    color: @subcolor;
+}
+.lg-u-text-s{ 
+    font-size: 14px;
+    line-height: 18px;
+    color: @tipcolor;
+}
+.lg-u-label{
+    text-align: right;
+    width: 100px; 
+    display: inline-block;
+    line-height: 30px;
+}

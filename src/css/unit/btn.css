@@ -1,11 +1,80 @@
-.u-btn{
+.lg-u-btn{
     display: inline-block;
     text-align: center;
     vertical-align: middle;
+    margin:5px;
     padding:6px 12px;
     font-size: 14px;
+    font-family: @family;
+    height: 30px;
+    line-height: 16px;
+    min-width:100px;
     cursor: pointer;
-    &.main{
-        background-color:;
+    outline:none;
+    border:none;
+    border-radius: 3px; 
+    color: white;
+    background-color: @bordercolor; 
+    &:last-child{
+        margin-right:0;
+    }   
+} 
+.lg-u-btn-o{
+    &:extend(.lg-u-btn); 
+    color: @bordercolor;
+    border:1px solid @bordercolor;
+    background-color: white; 
+    &:last-child{
+        margin-right:0;
+    }
+    &.lg-c-main{ 
+        color: @linkcolor;
+        border:1px solid @linkcolor;
+        background-color: white;
+        &:hover{
+            color:@hovercolor;
+            border:1px solid @hovercolor;
+            background-color: white;
+        }
     }
 }
+.lg-u-btn-s{
+    &:extend(.lg-u-btn); 
+    min-width:60px; 
+    height: 26px;
+    line-height: 14px;
+}
+.lg-u-btn-o-s{
+    &:extend(.lg-u-btn-o); 
+    min-width:60px; 
+    height: 26px;
+    line-height: 14px;
+}
+.lg-u-btn-xs{
+    &:extend(.lg-u-btn); 
+    min-width:26px;  
+    height: 26px;
+    padding:6px;
+    line-height: 14px;
+}
+.lg-u-btn-o-xs{
+    &:extend(.lg-u-btn-o); 
+    min-width:26px;  
+    height: 26px;
+    padding:6px;
+    line-height: 14px;
+}
+
+.lg-c-main{  
+    background-color: @linkcolor;
+    &:hover{
+        background-color:@hovercolor;
+    }
+} 
+.lg-c-plain{  
+    background-color: white;
+    color: @subcolor;
+    &:hover{
+        background-color:@bordercolor;
+    }
+} 
