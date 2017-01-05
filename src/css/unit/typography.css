@@ -1,0 +1,22 @@
+.lg-u-title{
+    font-size: @font_size_L;
+    line-height: @font_height_L; 
+    color: @titlecolor;
+    display: inline;
+    margin-right: @gap; 
+}
+.lg-u-title-main{
+    &:extend(.lg-u-title); 
+    color:@basecolor;
+    font-size: @font_size_xL;
+}
+.lg-u-text{
+    font-size: @font_size_M;
+    line-height: @font_height_M;
+    color: @subcolor;
+}
+.lg-u-subtext{
+    font-size: @font_size_S;
+    line-height: @font_height_S;
+    color: @tipcolor;
+}

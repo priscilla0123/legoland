@@ -6,13 +6,6 @@ label,span{
     font-size: 14px;
 }
 
-.lg-u-title{ 
-    font-size: 18px;
-    line-height: 40px; 
-    color: @basecolor;
-    display: inline;
-    margin-right: @gap;
-}
 .lg-u-title-m{
     &:extend(.lg-u-title); 
     text-align: center;
@@ -22,11 +15,7 @@ label,span{
     &:extend(.lg-u-title); 
     text-align: right; 
 }
-.lg-u-text{ 
-    font-size: 16px;
-    line-height: 22px;
-    color: @subcolor;
-}
+ 
 .lg-u-text-s{ 
     font-size: 14px;
     line-height: 18px;

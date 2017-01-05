@@ -20,6 +20,7 @@
     box-sizing:border-box;
     float: left;
     padding:0 (@gap / 2);
+    min-height: 22px;
 }
 .lg-grid-1{
     width: 8.333333%;

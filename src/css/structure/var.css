@@ -1,7 +1,8 @@
-/* ------- color -------*/
-/*color:[titlecolor:标题(黑),subcolor:副标题/内容(深灰),tipcolor:次级文本(浅灰),bordercolor:边框]*/
-/*color:[backcolor:页面背景,backcolor_l:浅色背景,basecolor:页头(紫色),linkcolor:按钮链接(蓝色),hovercolor:划过颜色(深蓝)]*/
-/*color:[maincolor:高亮(橙色),dangercolor:警示色,successcolor:健康(绿色)]*/
+/* ------- color -------
+*color:[titlecolor:标题(黑),subcolor:副标题/内容(深灰),tipcolor:次级文本(浅灰),bordercolor:边框]
+*color:[backcolor:页面背景,backcolor_l:浅色背景,basecolor:页头(紫色),linkcolor:按钮链接(蓝色),hovercolor:划过颜色(深蓝)]
+*color:[maincolor:高亮(橙色),dangercolor:警示色,successcolor:健康(绿色)]
+*/
 @titlecolor:#333;
 @subcolor:#666;
 @tipcolor:#999;
@@ -17,6 +18,13 @@
 
 /* ------- font -------*/
 @family:Tahoma,"Helvetica Neue","Hiragino Sans GB","Microsoft Yahei",sans-serif; 
+@font_size_xL:18px;
+@font_size_L:16px;
+@font_size_M:14px;
+@font_size_S:12px;
+@font_height_L:40px;
+@font_height_M:22px;
+@font_height_S:18px;
 
 /* ------- gap -------*/
 @gap:30px;
@@ -24,4 +32,4 @@
 /* ------- structure -------*/
 @navH:80px;/* 导航高度 */
 @menuW:200px;/* 菜单宽度 */
-@navTcolor:white;
+@navTcolor:white;/* 导航文字颜色 */
