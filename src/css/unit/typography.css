@@ -20,3 +20,26 @@
     line-height: @font_height_S;
     color: @tipcolor;
 }
+
+/* 未整理 */
+.lg-u-title-m{
+    &:extend(.lg-u-title); 
+    text-align: center;
+    display: block; 
+}
+.lg-u-title-r{
+    &:extend(.lg-u-title); 
+    text-align: right; 
+}
+ 
+.lg-u-text-s{ 
+    font-size: 14px;
+    line-height: 18px;
+    color: @tipcolor;
+}
+.lg-u-label{
+    text-align: right;
+    width: 100px; 
+    display: inline-block;
+    line-height: 30px;
+}

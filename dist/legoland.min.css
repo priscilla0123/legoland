@@ -10,6 +10,7 @@
 /* 导航高度 */
 /* 菜单宽度 */
 /* 导航文字颜色 */
+/* 变量 */
 /*  base 公共基础 */
 html,
 body {
@@ -34,6 +35,15 @@ ul {
   padding: 0;
   list-style: none;
 }
+p {
+  margin: 0;
+}
+label,
+span {
+  color: #666;
+  font-size: 14px;
+}
+/* 全局设置 */
 @font-face {
   font-family: "iconfont";
   src: url('iconfont.eot?t=1477549960');
@@ -568,6 +578,7 @@ ul {
 .icon-liebiao1:before {
   content: "\e6a9";
 }
+/* 图标 */
 /* 结构模块 */
 .lg-s-wrapper {
   background-color: #ededed;
@@ -633,6 +644,7 @@ ul {
 .lg-s-pull-l {
   float: left;
 }
+/* 框架结构 */
 /* grid 栅格 */
 .lg-grid-container {
   padding: 15px;
@@ -703,37 +715,10 @@ ul {
 }
 /* 栅格 */
 /* 元件 */
-p {
-  margin: 0;
-}
-label,
-span {
-  color: #666;
-  font-size: 14px;
-}
-.lg-u-title-m {
-  text-align: center;
-  display: block;
-}
-.lg-u-title-r {
-  text-align: right;
-}
-.lg-u-text-s {
-  font-size: 14px;
-  line-height: 18px;
-  color: #999;
-}
-.lg-u-label {
-  text-align: right;
-  width: 100px;
-  display: inline-block;
-  line-height: 30px;
-}
-/* 文字内容 */
 .lg-u-title,
+.lg-u-title-main,
 .lg-u-title-m,
-.lg-u-title-r,
-.lg-u-title-main {
+.lg-u-title-r {
   font-size: 16px;
   line-height: 40px;
   color: #333;
@@ -753,6 +738,25 @@ span {
   font-size: 12px;
   line-height: 18px;
   color: #999;
+}
+/* 未整理 */
+.lg-u-title-m {
+  text-align: center;
+  display: block;
+}
+.lg-u-title-r {
+  text-align: right;
+}
+.lg-u-text-s {
+  font-size: 14px;
+  line-height: 18px;
+  color: #999;
+}
+.lg-u-label {
+  text-align: right;
+  width: 100px;
+  display: inline-block;
+  line-height: 30px;
 }
 /* 文字内容 */
 .lg-u-btn,
@@ -879,6 +883,254 @@ span {
   border-bottom-right-radius: 3px;
 }
 /* 按钮 */
+/* text + textarea + select + checkbox + radio + switchbox */
+input,
+select,
+textarea {
+  outline: none;
+}
+input,
+select {
+  box-sizing: border-box;
+  width: 150px;
+  margin-right: 5px;
+  line-height: 22px;
+}
+label.lg-require:before {
+  content: '*';
+  color: red;
+}
+/* text */
+input[type='text'] {
+  border: 1px solid #e1e1e1;
+  padding: 3px 5px;
+  font-size: 14px;
+  color: #666;
+}
+input[type='text']:active,
+input[type='text']:focus {
+  border: 1px solid #5986e1;
+  /*padding:3px 5px;*/
+}
+/* textarea */
+textarea {
+  border: 1px solid #e1e1e1;
+  padding: 3px 5px;
+  font-size: 14px;
+  color: #666;
+  width: 80%;
+  min-height: 100px;
+  resize: none;
+}
+textarea:active,
+textarea:focus {
+  border: 1px solid #5986e1;
+  /*padding:3px 5px;*/
+}
+/* select */
+select {
+  border: 1px solid #e1e1e1;
+  appearance: none;
+  padding: 5px;
+  font-size: 14px;
+  color: #666;
+}
+select:active,
+select:focus {
+  border: 1px solid #5986e1;
+}
+select option:hover {
+  background-color: #5986e1;
+}
+select option[selected] {
+  background-color: #5986e1;
+}
+/* checkbox & radio */
+input[type='checkbox'],
+input[type='radio'] {
+  opacity: 0;
+  z-index: 1;
+  height: 0;
+  width: 0;
+  margin: 0;
+}
+input[type='checkbox']:disabled + label,
+input[type='radio']:disabled + label {
+  color: #999;
+}
+input[type='checkbox']:disabled + label:before,
+input[type='radio']:disabled + label:before {
+  border-color: #999;
+}
+input[type='checkbox']:disabled + label:hover,
+input[type='radio']:disabled + label:hover {
+  color: #999;
+}
+/* checkbox */
+input[type='checkbox'] + label {
+  cursor: pointer;
+  width: auto;
+  margin-right: 10px;
+  position: static;
+}
+input[type='checkbox'] + label:hover {
+  color: #5986e1;
+}
+input[type='checkbox'] + label:before {
+  content: '';
+  border: 1px solid #999;
+  border-radius: 4px;
+  margin-right: 6px;
+  width: 15px;
+  padding-right: 1px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+input[type='checkbox']:checked + label {
+  color: #5986e1;
+}
+input[type='checkbox']:checked + label:before {
+  color: white;
+  content: "\e65d";
+  font-family: "iconfont" !important;
+  background-color: #5986e1;
+  border-color: #5986e1;
+  line-height: 14px;
+}
+input[type='checkbox']:disabled:checked + label {
+  color: #999;
+}
+input[type='checkbox']:disabled:checked + label:before {
+  color: #999;
+  background-color: transparent;
+  border-color: #999;
+}
+input[type='checkbox'].lg-parent:disabled:checked + label {
+  color: #999;
+}
+input[type='checkbox'].lg-parent:disabled:checked + label:before {
+  color: white;
+  background-color: #999;
+  border-color: #999;
+}
+input[type='checkbox'].lg-parent-part:checked + label {
+  color: #5986e1;
+}
+input[type='checkbox'].lg-parent-part:checked + label:before {
+  color: #5986e1;
+  background-color: transparent;
+  border-color: #5986e1;
+}
+/* radio */
+input[type='radio'] + label {
+  cursor: pointer;
+  width: auto;
+  margin-right: 10px;
+  position: static;
+}
+input[type='radio'] + label:hover {
+  color: #5986e1;
+}
+input[type='radio'] + label:before {
+  content: '';
+  border: 1px solid #999;
+  border-radius: 8px;
+  margin-right: 6px;
+  width: 15px;
+  padding-right: 1px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+input[type='radio']:checked + label {
+  color: #5986e1;
+  position: relative;
+}
+input[type='radio']:checked + label:before {
+  border-color: #5986e1;
+}
+input[type='radio']:checked + label:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #5986e1;
+  border-radius: 5px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+input[type='radio']:disabled:checked + label {
+  color: #999;
+}
+input[type='radio']:disabled:checked + label:before {
+  color: #999;
+  background-color: transparent;
+  border-color: #999;
+}
+input[type='radio']:disabled:checked + label:after {
+  content: "";
+  background-color: #999;
+}
+/* switchbox */
+input[type='checkbox'].lg-u-switch + label {
+  color: white;
+  background-color: #e1e1e1;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 2px 8px 2px 2px;
+}
+input[type='checkbox'].lg-u-switch + label:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  margin-right: 6px;
+  border-radius: 11px;
+  background-color: white;
+  border-color: white;
+  line-height: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  top: -1px;
+}
+input[type='checkbox'].lg-u-switch + label + label {
+  display: none;
+}
+input[type='checkbox'].lg-u-switch:checked + label + label {
+  cursor: pointer;
+  color: white;
+  background-color: #8bb455;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 2px 2px 2px 8px;
+  margin-right: 13px;
+}
+input[type='checkbox'].lg-u-switch:checked + label + label:after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  margin-left: 6px;
+  border-radius: 11px;
+  background-color: white;
+  border-color: white;
+  line-height: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  top: -1px;
+}
+input[type='checkbox'].lg-u-switch:checked + label {
+  display: none;
+}
+.lg-u-switch.lg-main:checked + label + label {
+  background-color: #464e78 !important;
+}
+/* 输入框等 */
 .lg-u-table,
 .lg-u-table-hd {
   width: 100%;
@@ -901,46 +1153,6 @@ span {
   color: white;
 }
 /* 表格 */
-input,
-select {
-  outline: none;
-  box-sizing: border-box;
-  width: 150px;
-  margin-right: 5px;
-  line-height: 22px;
-}
-input[type='radio'] {
-  width: 20px;
-}
-input[type='text'] {
-  border: 1px solid #e1e1e1;
-  padding: 3px 5px;
-  font-size: 14px;
-  color: #666;
-}
-input[type='text']:active,
-input[type='text']:focus {
-  border: 1px solid #5986e1;
-  /*padding:3px 5px;*/
-}
-select {
-  border: 1px solid #e1e1e1;
-  appearance: none;
-  padding: 5px;
-  font-size: 14px;
-  color: #666;
-}
-select:active,
-select:focus {
-  border: 1px solid #5986e1;
-}
-select option:hover {
-  background-color: #5986e1;
-}
-select option[selected] {
-  background-color: #5986e1;
-}
-/* 表格 */
 /* 功能组件模块 */
 .lg-m-nav {
   height: 100%;
@@ -949,7 +1161,7 @@ select option[selected] {
 .lg-m-nav .lg-m-nav-hd {
   width: 200px;
   height: 100%;
-  background-image: url('img/logo.png');
+  /*background-image: url('img/logo.png');*/
   background-position: center 10px;
   background-repeat: no-repeat;
   display: inline-block;
@@ -1209,3 +1421,23 @@ select option[selected] {
   display: none;
 }
 /* 筛选框 */
+.lg-m-form-block {
+  margin-top: 10px;
+  position: relative;
+}
+.lg-m-form-block label {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  line-height: 30px;
+  text-align: right;
+}
+.lg-m-form-block label + textarea,
+.lg-m-form-block label + input[type='text'],
+.lg-m-form-block label + .lg-m-form-line {
+  margin-left: 100px;
+}
+.lg-m-form-block input + span {
+  margin-right: 5px;
+}
+/* 表单 */
