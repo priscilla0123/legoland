@@ -3,13 +3,13 @@
     padding:(@gap / 2);
 }
 
-.lg-grid-row{
-    overflow: auto;
+.lg-grid-row{ 
     margin-left: -(@gap / 2);
     margin-right: -(@gap / 2);
     &:before,&:after{
         content:' ';
         display: table;
+        clear: both;
     } 
 }
 

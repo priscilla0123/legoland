@@ -9,11 +9,14 @@
         &:first-child{
             border-top:none;
         }
-        .lg-m-con-line{
-            .lg-u-label{
-                position: absolute;
-            }    
+        & > li{
+            padding:5px 0;
         }
+         
+        & >li> .lg-u-label{
+            position: absolute;
+        }    
+         
         .lg-m-con-group{
             margin-left: 100px;
             line-height: 30px;

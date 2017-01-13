@@ -73,12 +73,16 @@
         &+ul{
             display: block;
         }
-    }
+    }  
     a{
         cursor: pointer;
         position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+        padding-right: 40px;        
         &:hover{
-            background-color:@backcolor;;
+            background-color:@backcolor;
         }
     }
     .cur{        

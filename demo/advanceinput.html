@@ -46,9 +46,6 @@
                             </a>
                             <ul class="lg-m-sidebar-l2">
                                 <li>
-                                    <a href="list-normal.html">list normal</a>
-                                </li>
-                                <li>
                                     <a href="typography.html">文字Typography</a>
                                 </li>
                                 <li>
@@ -61,7 +58,26 @@
                                     <a href="text.html">下拉框Select</a>
                                 </li>
                                 <li>
-                                    <a href="checkbox.html">复选框Checkbox</a>
+                                    <a href="advanceinput.html">输入元件等AdvanceInput</a>
+                                </li>
+                                <li>
+                                    <a href="tab.html">切换页Tab</a>
+                                </li>
+                                <li>
+                                    <a href="toast.html">提示</a>
+                                </li>
+                                <li>
+                                    <a href="table.html">表格</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="active" href="javascript:;">
+                                <span class="nav-label">示例Page</span>
+                            </a>
+                            <ul class="lg-m-sidebar-l2">
+                                <li>
+                                    <a href="listpage.html">列表</a>
                                 </li>
                             </ul>
                         </li>
@@ -72,7 +88,7 @@
             <div class="lg-s-content-r">
                 <ul class="lg-m-breadcrumb">
                     <li><a>元件Unit</a></li>
-                    <li><a>复选框Checkbox</a></li>
+                    <li><a>输入元件等AdvanceInput</a></li>
                 </ul>
                 <div class="lg-grid-container">
                     <div class="lg-grid-row">
@@ -90,35 +106,49 @@
                                                     <tr>
                                                         <td>默认</td>
                                                         <td>
+                                                            <span class="lg-u-check">
                                                             <input type="checkbox" id="c_1" />
                                                             <label for="c_1">可用</label>
+                                                            </span>
                                                         </td>
                                                         <td>
+                                                            <span class="lg-u-check">
                                                             <input type="checkbox" id="c_2" disabled="disabled" />
                                                             <label for="c_2">不可用</label>
+                                                            </span>
                                                         </td>
                                                         <td>
+                                                            <span class="lg-u-check">
                                                             <input type="checkbox" id="c_3" disabled="disabled" checked="checked" />
                                                             <label for="c_3">不可用(选中)</label>
+                                                            </span>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>有子项</td>
                                                         <td>
+                                                            <span class="lg-u-check">
                                                             <input type="checkbox" id="c_7" class="lg-parent-part" checked="checked" />
                                                             <label for="c_7">可用(未全选)</label>
+                                                            </span>
                                                         </td>
                                                         <td>
+                                                            <span class="lg-u-check">
                                                             <input type="checkbox" id="c_8" class="lg-parent" checked="checked" />
                                                             <label for="c_8">可用(全选)</label>
+                                                            </span>
                                                         </td>
                                                         <td>
+                                                            <span class="lg-u-check">
                                                             <input type="checkbox" id="c_5" disabled="disabled" checked="checked" />
                                                             <label for="c_5">不可用(未全选)</label>
+                                                            </span>
                                                         </td>
                                                         <td>
+                                                            <span class="lg-u-check">
                                                             <input type="checkbox" id="c_6" disabled="disabled" checked="checked" class="lg-parent" />
                                                             <label for="c_6">不可用(全选)</label>
+                                                            </span>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -141,22 +171,30 @@
                                                     <tr>
                                                         <td>默认</td>
                                                         <td>
-                                                            <input type="radio" id="r_1" name="r" />
-                                                            <label for="r_1">可用1</label>
+                                                            <span class="lg-u-radio"> 
+                                                                <input type="radio" id="r_1" name="r" />
+                                                                <label for="r_1">可用1</label>
+                                                            </span>
                                                         </td>
                                                         <td>
-                                                            <input type="radio" id="r_11" name="r"/>
-                                                            <label for="r_11">可用2</label>
+                                                            <span class="lg-u-radio"> 
+                                                                <input type="radio" id="r_11" name="r"/>
+                                                                <label for="r_11">可用2</label>
+                                                            </span>
                                                         </td>
                                                         <td>
+                                                            <span class="lg-u-radio">
                                                             <input type="radio" id="r_2" disabled="disabled" />
                                                             <label for="r_2">不可用</label>
+                                                            </span>
                                                         </td>
                                                         <td>
+                                                            <span class="lg-u-radio">
                                                             <input type="radio" id="r_3" disabled="disabled" checked="checked" />
-                                                            <label for="r_3">不可用(选中)</label>
+                                                            <label for="r_3">不可用(选中)</label> 
+                                                            </span>
                                                         </td>
-                                                    </tr>                                                    
+                                                    </tr>
                                                 </tbody>
                                             </table>
                                             <div class="lg-s-blank"></div>
@@ -172,8 +210,41 @@
                                     <div class="lg-grid-row">
                                         <div class="lg-grid-12">
                                             <div class="lg-s-blank"></div>
-                                             <input type="checkbox" class="lg-u-switch" id="ss"/><label for="ss">关</label><label for="ss">开</label>
-                                             <input type="checkbox" class="lg-u-switch lg-main" id="ss3" checked="checked" /><label for="ss3">桑心</label><label for="ss3">开心</label>
+                                            <span class="lg-u-switch">
+                                                <input type="checkbox" id="ss" />
+                                                <label for="ss">关</label>
+                                                <label for="ss">开</label>
+                                            </span>
+                                            <span class="lg-u-switch">
+                                                <input type="checkbox" class="lg-main" id="ss3" checked="checked" />
+                                                <label for="ss3">桑心</label>
+                                                <label for="ss3">开心</label>
+                                            </span>
+                                            <div class="lg-s-blank"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg-s-body">
+                                <div class="lg-s-body-hd">
+                                    <p class="lg-u-title-main">标签Tag</p>
+                                </div>
+                                <div class="lg-s-body-by">
+                                    <div class="lg-grid-row">
+                                        <div class="lg-grid-12">
+                                            <div class="lg-s-blank"></div>
+                                            <span class="lg-u-tag">系统标签</span>
+                                            <div class="lg-u-tag">未选择</div>
+                                            <span class="lg-u-tag lg-active">已选择</span>
+                                            <span class="lg-u-tag lg-active lg-del">自定义标签</span>
+                                            <div class="lg-s-blank"></div>
+                                        </div>
+                                        <div class="lg-grid-12">
+                                            <div class="lg-u-tag-add">
+                                                <input type="text" placeholder="请输入自定义标签" />
+                                                <button type="button" class="lg-u-btn lg-s lg-plain"><i class="iconfont icon-zhengque"></i></button>
+                                                <button type="button" class="lg-u-btn lg-s lg-plain"><i class="iconfont icon-cuowu"></i></button>
+                                            </div>
                                             <div class="lg-s-blank"></div>
                                         </div>
                                     </div>
