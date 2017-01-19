@@ -41,6 +41,21 @@
             color:#6b6b6b;
         }
     } 
+    &.lg-plain-blue{
+        background-color: transparent;
+        border:1px solid transparent;
+        color: @linkcolor;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    &.lg-plain-blue.lg-main{
+        background-color: transparent;
+        border:1px solid transparent;
+        color: @linkcolor;
+        &:hover{
+            color:#6b6b6b;
+        }
+    }
     &.lg-l{
         height: 34px;
         line-height: 16px;
@@ -63,6 +78,8 @@
         margin-right: 5px; 
         font-size: 14px; 
     } 
+
+
 } 
 .lg-u-btn-o{
     &:extend(.lg-u-btn); 

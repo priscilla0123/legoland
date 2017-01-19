@@ -14,6 +14,10 @@ select {
     line-height: 22px;
 }
 
+label{
+    font-weight: normal;
+    margin:0;
+}
 label.lg-require {
     &:before {
         content: '*';
@@ -33,6 +37,9 @@ input[type='text'] {
     &:active,
     &:focus {
         border: 1px solid @linkcolor;
+    }
+    &.lg-u-date{
+        
     }
 }
 
@@ -98,7 +105,7 @@ input[type='radio'] {
         width: auto;
         margin-right: 10px;
         position: static;
-        display: inline !important;
+        display: inline !important; 
         &:hover {
             color: @linkcolor;
         }
@@ -107,10 +114,11 @@ input[type='radio'] {
             border: 1px solid @tipcolor;
             border-radius: 4px;
             margin-right: 6px;
-            width: 15px;
+            width: 16px;
             height: 16px;
             display: inline-block;
             vertical-align: text-top;
+            box-sizing:border-box;
         }
     }
     input[type='checkbox']:checked + label {
@@ -121,7 +129,7 @@ input[type='radio'] {
             font-family: "iconfont" !important;
             background-color: @linkcolor;
             border-color: @linkcolor;
-            line-height: 14px;
+            line-height: 12px;
         }
     }
     input[type='checkbox']:disabled + label {
@@ -166,18 +174,12 @@ input[type='radio'] {
     label {
         white-space: nowrap;
     }
-    &.lg-plain > label:before {
-        display: none !important;
-    }
-    &.lg-plain > label:after {
-        display: none !important;
-    }
     input[type='radio'] + label {
         cursor: pointer;
         width: auto;
         margin-right: 10px;
         position: static;
-        display: inline !important;
+        display: inline !important; 
         &:hover {
             color: @linkcolor;
         }
@@ -186,11 +188,11 @@ input[type='radio'] {
             border: 1px solid @tipcolor;
             border-radius: 8px;
             margin-right: 6px;
-            width: 15px;
-            padding-right: 1px;
+            width: 16px;
             height: 16px;
             display: inline-block;
             vertical-align: text-top;
+            box-sizing:border-box;
         }
     }
     input[type='radio']:checked + label {
@@ -206,8 +208,8 @@ input[type='radio'] {
             background-color: @linkcolor;
             border-radius: 5px;
             position: absolute;
-            top: 4px;
-            left: 4px;
+            top: 3px;
+            left: 3px;
         }
     }
     input[type='radio']:disabled + label {
@@ -233,6 +235,18 @@ input[type='radio'] {
     }
 }
 
+.lg-plain {
+    .lg-u-check,
+    .lg-u-radio {
+        & > label:before {
+            display: none !important;
+        }
+        & > label:after {
+            display: none !important;
+        }
+    }
+}
+
 
 /* switchbox */
 
@@ -245,6 +259,7 @@ input[type='radio'] {
         border-radius: 20px;
         display: inline-block !important;
         padding: 2px 8px 2px 2px;
+        box-sizing:content-box;
         &:before {
             content: "";
             height: 20px;
@@ -272,6 +287,7 @@ input[type='radio'] {
         border-radius: 20px;
         display: inline-block !important;
         padding: 2px 2px 2px 8px;
+        box-sizing:content-box;
         &:after {
             content: "";
             height: 20px;
