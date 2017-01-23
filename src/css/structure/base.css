@@ -12,8 +12,9 @@ iframe{
 }
 a{
     box-sizing:border-box;
-    text-decoration: none;
+    text-decoration: none !important;
     color: @linkcolor;
+    cursor: pointer;
 }
 ul{
     margin:0;

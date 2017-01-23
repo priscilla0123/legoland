@@ -27,8 +27,9 @@ iframe {
 }
 a {
   box-sizing: border-box;
-  text-decoration: none;
+  text-decoration: none !important;
   color: #5986e1;
+  cursor: pointer;
 }
 ul {
   margin: 0;
@@ -1296,6 +1297,7 @@ input[type='radio'] {
   background-color: #f7f9fe;
   font-size: 16px;
   border-bottom: 1px solid #5986e1;
+  box-sizing: content-box;
 }
 .lg-u-tab .lg-u-tab-li {
   float: left;
@@ -2965,6 +2967,7 @@ input:focus + .lg-u-error-b {
   padding: 0 5px;
   cursor: pointer;
   position: relative;
+  display: inline-block;
 }
 .lg-u-table a.lg-action ul {
   display: none;

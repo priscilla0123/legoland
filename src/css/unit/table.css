@@ -49,12 +49,13 @@
     }
     td {
         border: none;
-    }
+    } 
     a.lg-action {
         color: @subcolor;
         padding: 0 5px;
         cursor: pointer;
         position: relative;
+        display: inline-block; 
         ul {
             display: none;
         }
