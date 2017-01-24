@@ -1,9 +1,14 @@
-<link href="/legoland.min.css"/>
-# Legoland
-## 概述 
-> 适用于管理后台的前端UI模块化框架(css+html+js)
-> Legoland.css是独立的样式库,Legoland html规范约定了页面元素组合嵌套的规则,Legoland.js是依赖Legoland.css实现的JS组件库
-> 建议的DTD: HTML5 文档类型
+# legoland:超轻量web前端UI框架 
+
+>  适用于管理后台的前端UI模块化框架(css+html+js)
+
+>  独立的样式库legoland.css; 约定页面元素组合嵌套规则; 依赖legoland.css实现的JS组件库legoland.js
+
+>  建议的DTD: HTML5 文档类型
+
+>  当前版本：v0.1
+
+文档包含
 
 ## Legoland.css
 > - 模块化的css样式库
@@ -146,7 +151,12 @@
 <button type="button" class="lg-u-btn lg-s lg-plain"><i class="iconfont icon-zhengque"></i></button>
 <button type="button" class="lg-u-btn lg-main lg-s lg-plain"><i class="iconfont icon-biaoqian"></i></button>
 ```
-
+    
+    
+    
+    
+    
+    
     > 大
     <button type="button" class="lg-u-btn lg-l">default</button>
     <button type="button" class="lg-u-btn lg-main lg-l">main</button>
@@ -170,6 +180,7 @@
     <button type="button" class="lg-u-btn lg-main"><i class="iconfont icon-biaoqian"></i>main</button>
     <button type="button" class="lg-u-btn lg-plain"><i class="iconfont icon-zhengque"></i></button>
     <button type="button" class="lg-u-btn lg-main lg-plain"><i class="iconfont icon-biaoqian"></i></button>
+
 
     > 小
     <button type="button" class="lg-u-btn lg-s">default</button>
