@@ -6,6 +6,7 @@
 /* 结构模块 */
 @import (less) 'css/structure/layout.css';/* 框架结构 */
 @import (less) 'css/structure/grid.css';/* 栅格 */
+@import (less) 'css/structure/color.css';/* 颜色 */
 
 /* 元件 */ 
 @import (less) 'css/unit/typography.css';/* 文字内容 */

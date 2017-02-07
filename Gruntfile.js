@@ -150,7 +150,8 @@ module.exports = function(grunt) {
                     cleancss: true // 压缩css文件 
                 },
                 files: {
-                    "dist/legoland.min.css": "src/legoland.css"
+                    "dist/legoland.min.css": "src/legoland.css",
+                    "../new/doc-backend/doc/legoland/legoland.min.css": "src/legoland.css"
                 }
             }
         },

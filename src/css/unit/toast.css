@@ -1,20 +1,20 @@
 /* toast & bubble & error & progress*/
 /* toast */
-.lg-u-toast{
+.lg-toast{
     display: inline-block;
     max-width: 232px;
     padding:15px 20px;
     margin:10px;
     border-radius: 4px;
-    box-shadow: 2px 2px 12px 2px @bordercolor;
+    box-shadow: 2px 2px 12px 2px @color_border;
     background-color: white;
 }
 /* bubble */
-.lg-u-bubble{
-    &:extend(.lg-u-toast);
-    color:@maincolor;
+.lg-bubble{
+    &:extend(.lg-toast);
+    color:@color_highlight;
     position: relative;
-    box-shadow: 4px 4px 14px 1px @bordercolor;
+    box-shadow: 4px 4px 14px 1px @color_border;
     &:after{
         content:'';
         border:8px solid transparent;
@@ -26,46 +26,46 @@
     } 
 }
 /* error */
-.lg-u-error{
-    color: @maincolor;
+.lg-error{
+    color: @color_highlight;
 }
-.lg-u-error-b{
-    color: @maincolor;
+.lg-error-b{
+    color: @color_highlight;
     display: block;
     line-height: 30px;
 }
-input:focus + .lg-u-error {
+input:focus + .lg-error {
     display: none;
 }
-input:focus + .lg-u-error-b{
+input:focus + .lg-error-b{
     visibility: hidden;
 }
 /* progress */
-.lg-u-progress-loop(@n, @i:0) when (@i <= @n) {
+.lg-progress-loop(@n, @i:0) when (@i <= @n) {
     .lg-@{i} {
         position: relative;
         overflow: hidden;
         height: 100%;
         width: 100%;
         border-radius: 15px;
-        background-color: @backcolor;
+        background-color: @color_bg;
         &:after{
             content:'';
-            background-color: @linkcolor;
+            background-color: @color_main;
             height: 100%;
             position: absolute;
             width: percentage((@i/100));
         } 
     }
-    .lg-u-progress-loop(@n, (@i + 1));
+    .lg-progress-loop(@n, (@i + 1));
 }
-.lg-u-progress{
+.lg-progress{
     height: 30px;
     min-width: 200px; 
     margin:0 20px 25px 20px; 
     display: inline-block; 
     position: relative;
-    .lg-u-progress-loop(100);
+    .lg-progress-loop(100);
 
     & > label{
         position: absolute;

@@ -1,17 +1,16 @@
-.lg-m-nav{
+.lg-nav{
     height: 100%;
-    background-color: @basecolor;
-    .lg-m-nav-hd{
+    background-color: @color_sys;
+    .lg-nav-hd{
         width: @menuW;
         height: 100%;
-        /*background-image: url('img/logo.png');*/
         background-position:center 10px;
         background-repeat: no-repeat;
         display: inline-block;
         position: relative;
         float: left;
 
-        .lg-m-nav-title{
+        .lg-nav-title{
             color: white; 
             text-align: center;
             letter-spacing: 7px;
@@ -22,7 +21,7 @@
             left: 0;
         }
     }
-    .lg-m-nav-by{
+    .lg-nav-by{
         position: absolute;
         left: @menuW; 
         right: 50px;
@@ -38,17 +37,17 @@
                 color: @navTcolor; 
             } 
             &.active{ 
-                border-bottom: 3px solid @linkcolor; 
+                border-bottom: 3px solid @color_main; 
             }
             &:hover{
-                border-bottom: 3px solid @maincolor; 
+                border-bottom: 3px solid @color_highlight; 
                 & a{
-                   color: @maincolor; 
+                   color: @color_highlight; 
                 }
             }      
         }
     }
-    .lg-m-nav-tl{
+    .lg-nav-tl{
         display: none;
         float: right;
         height: 100%;
@@ -66,7 +65,7 @@
             content: "\e63f";
         }
     }
-    .lg-m-nav-bytab{
+    .lg-nav-bytab{
         display: none;
         z-index: 1001;
         position: absolute;
@@ -84,7 +83,7 @@
             line-height: 36px;
             cursor: pointer; 
             &.active,&:hover{
-                background-color: @linkcolor;
+                background-color: @color_main;
                 border-radius: 3px;
             }
             a{
@@ -93,7 +92,7 @@
             }
         }
     }
-    .lg-m-nav-right{
+    .lg-nav-right{
         position: absolute;
         padding:10px;
         right: 0;

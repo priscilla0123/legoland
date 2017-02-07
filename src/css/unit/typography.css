@@ -1,43 +1,43 @@
-.lg-u-title{
+.lg-title{
     font-size: @font_size_L;
     line-height: @font_height_L; 
-    color: @titlecolor;
+    color: @color_title;
     display: inline;
     margin-right: @gap; 
 }
-.lg-u-title-main{
-    &:extend(.lg-u-title); 
-    color:@basecolor;
+.lg-title-main{
+    &:extend(.lg-title); 
+    color:@color_sys;
     font-size: @font_size_xL;
 }
-.lg-u-text{
+.lg-text{
     font-size: @font_size_M;
     line-height: @font_height_M;
-    color: @subcolor;
+    color: @color_text;
 }
-.lg-u-subtext{
+.lg-subtext{
     font-size: @font_size_S;
     line-height: @font_height_S;
-    color: @tipcolor;
+    color: @color_subtext;
 }
 
 /* 未整理 */
-.lg-u-title-m{
-    &:extend(.lg-u-title); 
+.lg-title-m{
+    &:extend(.lg-title); 
     text-align: center;
     display: block; 
 }
-.lg-u-title-r{
-    &:extend(.lg-u-title); 
+.lg-title-r{
+    &:extend(.lg-title); 
     text-align: right; 
 }
  
-.lg-u-text-s{ 
+.lg-text-s{ 
     font-size: 14px;
     line-height: 18px;
-    color: @tipcolor;
+    color: @color_subtext;
 }
-.lg-u-label{
+.lg-label{
     text-align: right;
     width: 100px; 
     display: inline-block;
