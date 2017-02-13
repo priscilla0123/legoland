@@ -96,7 +96,7 @@ input[type='radio'] {
 
 /* checkbox */
 
-.lg-checkbox {
+.lg-checkbox,.lg-checkbox-all,.lg-checkbox-part {
     label {
         white-space: nowrap;
     }

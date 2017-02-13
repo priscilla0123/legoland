@@ -4,11 +4,22 @@
     line-height: 36px;
     text-align: center;
     color: @color_text;
-    thead {
-        background-color: @color_sys !important;
-        color: white;
+    thead { 
         tr {
-            background-color: @color_sys !important; 
+            background-color: @color_sys ; 
+            color: white;
+            &.lg-color-danger-bg{
+                background-color: @color_danger; 
+            }
+            &.lg-color-success-bg{
+                background-color: @color_success; 
+            }
+            &.lg-color-plain-bg{
+                background-color: @color_border; 
+            }
+            &.lg-color-highlight-bg{
+                background-color: @color_highlight; 
+            }
         }
         th {
             font-weight: normal;

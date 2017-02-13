@@ -31,12 +31,11 @@
     } 
 }
 
-.lg-body{
+.page{
     background-color: white;
     padding:0 10px;
-    margin-top:@gap;
     border-radius: 3px;
-    min-height: 100%;
+    min-height: 100%; 
 
     .page-head{
         clear: both;

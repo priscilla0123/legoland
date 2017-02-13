@@ -92,6 +92,31 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        copy: {
+            build: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/css/icon',
+                    src: 'iconfont.*',
+                    dest: 'release'
+                },{
+                    expand: true,
+                    cwd: 'src/img',
+                    src: '*.*',
+                    dest: 'release/img'
+                },{
+                    expand: true,
+                    cwd: 'src/js',
+                    src: '*.*',
+                    dest: 'release/js'
+                },{
+                    expand: true,
+                    cwd: 'demo',
+                    src: '*.*',
+                    dest: 'release/demo'
+                }]
+            }
+        },
 
         concat: {
             js: {
@@ -173,4 +198,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.registerTask('default', ['less','copy','watch']);
+    grunt.registerTask('release',['less','release']);
 };

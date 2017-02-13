@@ -15,6 +15,7 @@
     border-radius: 3px; 
     color: white;
     background-color: @color_main; 
+    -webkit-text-stroke-width:0;
     &:last-child{
         margin-right:0;
     }   
@@ -136,16 +137,19 @@
 .lg-btn-color-constructor(lg-btn,@color_success,success);
 .lg-btn-color-constructor(lg-btn,@color_sys,sys);
 .lg-btn-color-constructor(lg-btn,@color_border,plain);
+.lg-btn-color-constructor(lg-btn,@color_highlight,highlight);
 .lg-btn-color-constructor(lg-btn-large,@color_main,main);
 .lg-btn-color-constructor(lg-btn-large,@color_danger,danger);
 .lg-btn-color-constructor(lg-btn-large,@color_success,success);
 .lg-btn-color-constructor(lg-btn-large,@color_sys,sys);
 .lg-btn-color-constructor(lg-btn-large,@color_border,plain);
+.lg-btn-color-constructor(lg-btn-large,@color_highlight,highlight);
 .lg-btn-color-constructor(lg-btn-small,@color_main,main);
 .lg-btn-color-constructor(lg-btn-small,@color_danger,danger);
 .lg-btn-color-constructor(lg-btn-small,@color_success,success);
 .lg-btn-color-constructor(lg-btn-small,@color_sys,sys);
 .lg-btn-color-constructor(lg-btn-small,@color_border,plain);
+.lg-btn-color-constructor(lg-btn-small,@color_highlight,highlight);
 
 /* group */
 .lg-btn-group{
