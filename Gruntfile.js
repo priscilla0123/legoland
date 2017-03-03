@@ -47,7 +47,10 @@ module.exports = function(grunt) {
                     cleancss: false // 压缩css文件 
                 },
                 files: {
-                    "test/legoland.css": "src/legoland.css"
+                    "test/legoland.css": "src/legoland.css",
+                    "test/style.css": "src/style.css", 
+                    "../lothar-hftmanage/common/components/legoland/legoland.css": "src/legoland.css",
+                    "../lothar-hftmanage/common/static/css/style.css": "src/style.css"
                 }
             },
 
@@ -71,7 +74,7 @@ module.exports = function(grunt) {
 
         watch: {
             start: {
-                files: ['src/css/*/*.css', 'src/js/*.js', 'examples/*.*'],
+                files: ['src/css/*/*.css', 'src/style/*.css', 'src/js/*.js', 'examples/*.*'],
                 tasks: ['less', 'copy']
             }
         },

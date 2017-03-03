@@ -1,5 +1,4 @@
-.lg-sidebar {
-    height: 100%;
+.wp-sidebar { 
     max-height: 100%;
     position: relative;
     background-color: @color_bglight;
@@ -98,11 +97,12 @@
     &::-webkit-scrollbar {
         border: 1px solid @color_border;
         border-top: none;
-        border-bottom: none;
+        border-bottom: none; 
+        width: 8px;
     }
     &::-webkit-scrollbar-thumb {
         background-color: #c1c1c1;
-        border-radius: 10px;
+        border-radius: 10px; 
     }
     &::-webkit-scrollbar-button:start:decrement,
     &::-webkit-scrollbar-button:end:increment,
@@ -116,7 +116,7 @@
     }
 }
 
-.lg-sidebar-hand {
+.wp-sidebar-hand {
     position: absolute;
     right: -12px;
     top:50%;

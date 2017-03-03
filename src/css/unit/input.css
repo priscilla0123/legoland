@@ -4,12 +4,13 @@ input,
 select,
 textarea {
     outline: none;
+    border-radius: 3px;
 }
 
 input,
 select {
-    box-sizing: border-box;
-    width: 150px;
+    box-sizing: border-box; 
+    width: 120px;
     margin-right: 5px;
     line-height: 22px;
 }
@@ -94,9 +95,10 @@ input[type='radio'] {
 }
 
 
+
 /* checkbox */
 
-.lg-checkbox,.lg-checkbox-all,.lg-checkbox-part {
+.lg-checkbox,.lg-checkbox-all,.lg-checkbox-part,.lg-checkbox-plain {
     label {
         white-space: nowrap;
     }
@@ -174,7 +176,7 @@ input[type='radio'] {
 
 /* radio */
 
-.lg-radio {
+.lg-radio,.lg-radio-plain {
     label {
         white-space: nowrap;
     }
@@ -251,6 +253,14 @@ input[type='radio'] {
     }
 }
 
+.lg-radio-plain,.lg-checkbox-plain{
+    input[type='radio'],input[type='checkbox']{
+        & + label:before,& + label:after{
+            display:none;
+        }
+    }  
+}
+
 
 /* switchbox */
 
@@ -258,16 +268,16 @@ input[type='radio'] {
     input[type='checkbox'] + label {
         color: white;
         background-color: @color_border;
-        height: 22px;
-        line-height: 22px;
+        height: 26px;
+        line-height: 26px;
         border-radius: 20px;
         display: inline-block !important;
         padding: 2px 8px 2px 2px;
         box-sizing:content-box;
         &:before {
             content: "";
-            height: 20px;
-            width: 20px;
+            height: 24px;
+            width: 24px;
             margin-right: 6px;
             border-radius: 11px;
             background-color: white;
@@ -286,16 +296,16 @@ input[type='radio'] {
         cursor: pointer;
         color: white;
         background-color: @color_success;
-        height: 22px;
-        line-height: 22px;
+        height: 26px;
+        line-height: 26px;
         border-radius: 20px;
         display: inline-block !important;
         padding: 2px 2px 2px 8px;
         box-sizing:content-box;
         &:after {
             content: "";
-            height: 20px;
-            width: 20px;
+            height: 24px;
+            width: 24px;
             margin-left: 6px;
             border-radius: 11px;
             background-color: white;

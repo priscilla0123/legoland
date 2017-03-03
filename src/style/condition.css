@@ -1,9 +1,9 @@
-.lg-condition {
+.wp-condition {
     padding: 0 10px;
     border-top: 1px solid @color_border;
     border-bottom: 1px solid @color_border;
     background-color: @color_bglight;
-    .lg-condition-box, .lg-condition-block {
+    .wp-condition-box {
         border-top: 1px solid @color_border;
         padding: 10px 0;
         &:first-child {
