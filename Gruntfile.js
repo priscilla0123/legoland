@@ -19,6 +19,11 @@ module.exports = function(grunt) {
                     cwd: 'examples',
                     src: '*.*',
                     dest: 'test/examples'
+                }, {
+                    expand: true,
+                    cwd: 'src/js',
+                    src: '*.*',
+                    dest: 'test/js'
                 }]
             },
             release: {
@@ -37,6 +42,11 @@ module.exports = function(grunt) {
                     cwd: 'examples',
                     src: '*.*',
                     dest: 'dist/examples'
+                }, {
+                    expand: true,
+                    cwd: 'src/js',
+                    src: '*.*',
+                    dest: 'dist/js'
                 }]
             },
         },
@@ -50,7 +60,8 @@ module.exports = function(grunt) {
                     "test/legoland.css": "src/legoland.css",
                     "test/style.css": "src/style.css", 
                     "../lothar-hftmanage/common/components/legoland/legoland.css": "src/legoland.css",
-                    "../lothar-hftmanage/common/static/css/style.css": "src/style.css"
+                    "../lothar-hftmanage/common/static/css/style.css": "src/style.css",
+                    "../doc-backend/doc/legoland/legoland.min.css": "src/legoland.css"
                 }
             },
 
