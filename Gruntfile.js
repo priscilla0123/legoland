@@ -21,9 +21,9 @@ module.exports = function(grunt) {
                     dest: 'test/examples'
                 }, {
                     expand: true,
-                    cwd: 'src/js',
+                    cwd: 'examples/js',
                     src: '*.*',
-                    dest: 'test/js'
+                    dest: 'test/examples/js'
                 }]
             },
             release: {
@@ -47,6 +47,11 @@ module.exports = function(grunt) {
                     cwd: 'src/js',
                     src: '*.*',
                     dest: 'dist/js'
+                }, {
+                    expand: true,
+                    cwd: 'examples/js',
+                    src: '*.*',
+                    dest: 'dist/examples/js'
                 }]
             },
         },
@@ -58,10 +63,10 @@ module.exports = function(grunt) {
                 },
                 files: {
                     "test/legoland.css": "src/legoland.css",
-                    "test/style.css": "src/style.css", 
-                    "../lothar-hftmanage/common/components/legoland/legoland.css": "src/legoland.css",
-                    "../lothar-hftmanage/common/static/css/style.css": "src/style.css",
-                    "../doc-backend/doc/legoland/legoland.min.css": "src/legoland.css"
+                    "test/examples/css/style.css": "examples/css/style.css", 
+                    "../lothar-xfcrm/jinpeng/components/legoland/legoland.css": "src/legoland.css",
+                    "../lothar-xfcrm/jinpeng/static/css/style.css": "examples/css/style.css",
+                    "../doc-backend/doc/legoland/legoland.min.css": "examples/css/style.css"
                 }
             },
 
@@ -70,7 +75,8 @@ module.exports = function(grunt) {
                     cleancss: false // 压缩css文件 
                 },
                 files: {
-                    "dist/legoland.css": "src/legoland.css"
+                    "dist/legoland.css": "src/legoland.css",
+                    "dist/examples/css/style.css": "examples/css/style.css" 
                 }
             }
         },
@@ -85,7 +91,7 @@ module.exports = function(grunt) {
 
         watch: {
             start: {
-                files: ['src/css/*/*.css', 'src/style/*.css', 'src/js/*.js', 'examples/*.*'],
+                files: ['src/css/*/*.css', 'src/style/*.css', 'src/js/*.js', 'examples/*.*','examples/style/*.*'],
                 tasks: ['less', 'copy']
             }
         },
