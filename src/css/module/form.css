@@ -12,6 +12,7 @@
         left: 0;
         line-height: 30px;
         text-align: right;
+        font-size: 12px;
     }
     input + span {
         margin-right: 5px;
@@ -24,13 +25,9 @@
     & *[class^='lg-btn'] {
         margin-top: 0;
         margin-bottom: 0;
-    }
-    input[type='text'],
-    select {
-        margin-bottom: 5px;
-    }
-
+    } 
     span{
         word-break:break-all;
+        margin-right: 5px;
     }
 }

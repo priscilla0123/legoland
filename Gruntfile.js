@@ -24,6 +24,11 @@ module.exports = function(grunt) {
                     cwd: 'examples/js',
                     src: '*.*',
                     dest: 'test/examples/js'
+                }, {
+                    expand: true,
+                    cwd: 'examples/css',
+                    src: '*.png',
+                    dest: 'test/examples/css'
                 }]
             },
             release: {
@@ -52,6 +57,11 @@ module.exports = function(grunt) {
                     cwd: 'examples/js',
                     src: '*.*',
                     dest: 'dist/examples/js'
+                }, {
+                    expand: true,
+                    cwd: 'examples/css',
+                    src: '*.png',
+                    dest: 'dist/examples/css'
                 }]
             },
         },
@@ -64,8 +74,10 @@ module.exports = function(grunt) {
                 files: {
                     "test/legoland.css": "src/legoland.css",
                     "test/examples/css/style.css": "examples/css/style.css", 
-                    "../lothar-xfcrm/jinpeng/components/legoland/legoland.css": "src/legoland.css",
-                    "../lothar-xfcrm/jinpeng/static/css/style.css": "examples/css/style.css",
+                    "../lothar-xfcrm/major/components/legoland/legoland.css": "src/legoland.css",
+                    "../lothar-xfcrm/major/components/legoland/style.css": "examples/css/style.css",
+                    "../feather-qx/components/legoland/legoland.css": "src/legoland.css",
+                    "../feather-qx/static/css/style.css": "examples/css/style.css",
                     "../doc-backend/doc/legoland/legoland.min.css": "examples/css/style.css"
                 }
             },
